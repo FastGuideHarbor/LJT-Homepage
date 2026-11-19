@@ -1,5 +1,6 @@
 locale: "en-US"
 title: "Junteng Liu"
+title_separator: "-"
 name: "Junteng Liu"
 description: "First-year PhD candidate at the HKUST NLP Group. Research focuses on natural language processing and machine learning, including LLM Reasoning and Reinforcement Learning, Hallucination in Vision-Language Models (VLMs), and LLM Truthfulness and Interpretability."
 url: https://fastguideharbor.github.io
@@ -17,10 +18,20 @@ author:
   github: "Vicent0205"
   twitter: "junteng88716710"
 
+og_image: og-image.png
+
 markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
+  hard_wrap: false
+  auto_ids: true
+  header_links: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 collections:
   posts:
@@ -40,3 +51,20 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+social:
+  type: Person
+  name: "Junteng Liu"
+  links:
+    - "mailto:jliugi@connect.ust.hk"
+    - "https://github.com/Vicent0205"
+    - "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
+    - "https://x.com/junteng88716710"
